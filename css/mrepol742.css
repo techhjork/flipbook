@@ -1,0 +1,346 @@
+/*
+*
+* Copyright (c) 2022 Melvin Jones Repol (mrepol742.github.io). All rights reserved.
+*
+* License under the GNU General Public License, Version 3.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.gnu.org/licenses/gpl-3.0.en.html
+*
+* Unless required by the applicable law or agreed in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+::selection {
+    background-color: #4285f4;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #4285f4;
+    color: #ffffff;
+}
+
+body {
+    background: #ffffff !important;
+    color: #212121;
+}
+
+
+hr {
+    height: 5px;
+}
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #4285f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #000000;
+}
+
+section.main {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav {
+    box-shadow: 0 0 5em rgba(0, 0, 0, .1);
+    transition: box-shadow .3s;
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 50px;
+    border: none;
+}
+
+.container-fluid {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#friends, #sm {
+    margin-top: 2%;
+}
+
+.card, .accordion {
+    box-shadow: 0 0 5em rgba(0, 0, 0, .1);
+    transition: box-shadow .3s;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.accordion, #accpt {
+    background-color: #ffffff;
+}
+
+#accpt {
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1s ease;
+}
+
+#accpt:hover {
+    background-color: #4285f4;
+    transition: all 1s ease;
+}
+
+.accordion-item, .accordion-button, .list-group-item, .navbar-toggler {
+    border: none;
+}
+
+.accordion-button:hover, .accordion-button:active {
+    background-color: #4285f4;
+    color: white;
+}
+.card:hover, .accordion:hover, nav:hover {
+    transition: box-shadow .3s;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.card-header, .accordion-header {
+    background: none;
+    border: none;
+}
+
+.text-center {
+  padding-top: 10%;
+}
+
+.text-center2 {
+    text-align: center;
+}
+
+p.top {
+    font-size: 1.2em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    margin: 7px;
+}
+
+@media (max-width:1080px) {
+
+    section.main {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 5% !important;
+    }
+
+    nav {
+        margin: 4%;
+    }
+
+    footer {
+        padding-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+
+    .container-fluid {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .dropdown-menu {
+        padding: 4% !important;
+    }
+}
+
+  .tst {
+      position: fixed;
+      z-index: 999999;
+      display: none;
+      bottom: 0%;
+      left: 0%;
+      right: 0;
+      text-align: center;
+      background-color: #212121;
+      color: #ffffff;
+      padding: 4px;
+  }
+
+   .nojs {
+    position: fixed;
+    z-index: 999999;
+    bottom: 0%;
+    left: 0%;
+    right: 0;
+    text-align: center;
+    background-color: #de5246;
+    color: #ffffff;
+    padding: 4px;
+   }
+
+  .circle-png {
+      border-radius: 50% !important;
+  }
+
+.skill {
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 0 5em rgba(0, 0, 0, .1);
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50px;
+    color: #484848;
+    transition: all 1s ease;
+}
+
+.skill:hover {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 1s ease;
+}
+
+.asd {
+    margin: 2%;
+}
+
+.images {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.images .holder {
+    overflow-x: scroll;
+    overflow-y:hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.images .holder::-webkit-scrollbar { 
+    display: none;
+}
+
+.images .holder .preview {
+    width: 50%;
+    height:auto;
+    max-width:200px;
+    max-height:90vh;
+    margin:0 0.3rem;
+}
+
+.preview0 {
+    max-width:350px !important;
+}
+
+@media (max-height:400px) {
+
+    .preview {
+        max-height: 70vh !important;
+    }
+}
+
+@media (max-width:1080px) {
+
+    .preview {
+        max-height: 50vh !important;
+    }
+}
+
+footer {
+    box-shadow: 0 0 5em #4286f460;
+    background-color: #ffffff;
+    margin-top:  15%;
+    color: #212121;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    border-style: none;
+}
+
+.dropdown-menu {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    border-radius: 20px;
+    box-shadow: 0 0 5em rgba(0, 0, 0, .1);
+    padding: 15%;
+}
+
+#download_btn {
+    border-radius: 50px;
+    padding-left: 6%;
+    padding-right: 6%;
+    transition: all 1s ease;
+}
+
+#download_btn:hover {
+    background-color: #ffffff;
+    border-color: #4285f4;
+    color: #4285f4;
+    transition: all 1s ease;
+}
+
+.deVaaa {
+    background-color: #ffffff;
+    color: #212121;
+    box-shadow: 0 0 5em rgba(0, 0, 0, .1);
+    padding: 5px;
+    text-align: center;
+}
+
+.foo-icon {
+    margin: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+	border: none;
+	background-color: #4285f4;
+	border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #3a76d8;
+}
+
+html {
+	scroll-behavior: smooth;
+}
